@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="gnome-podcasts">
+  <!-- interface-requires gtk+ 3.10 -->
+  <object class="GtkPopover" id="add-popover">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="valign">center</property>
+    <property name="sensitive">True</property>
+    <property name="tooltip_text" translatable="yes">Add a new podcast</property>
+    <child>
+      <object class="GtkBox" id="add-box">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="valign">center</property>
+        <property name="sensitive">True</property>
+        <property name="orientation">vertical</property>
+        <property name="margin">10</property>
+        <property name="spacing">6</property>
+        <child>
+          <object class="GtkLabel" id="add-box-enter-address-label">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="halign">start</property>
+            <property name="hexpand">true</property>
+            <property name="label" translatable="yes">Enter podcast address to add</property>
+            <style>
+              <class name="dim-label"/>
+            </style>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox" id="add-entry-box">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="spacing">6</property>
+            <child>
+              <object class="GtkEntry" id="new-url">
+                <property name="visible">True</property>
+                <property name="input_purpose">url</property>
+                <property name="width-chars">30</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkStack" id="add-button-stack">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="vhomogeneous">True</property>
+                <property name="interpolate_size">True</property>
+                <child>
+                  <object class="GtkButton" id="add-button">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="sensitive">False</property>
+                    <property name="label" translatable="yes">Add</property>
+                    <style>
+                      <class name="suggested-action"/>
+                    </style>
+                  </object>
+                  <packing>
+                    <property name="name">button</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSpinner">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="active">True</property>
+                    <property name="valign">center</property>
+                    <property name="halign">start</property>
+                  </object>
+                  <packing>
+                    <property name="name">spinner</property>
+                  </packing>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="add-box-already-subscribed-label">
+            <property name="visible">False</property>
+            <property name="can-focus">False</property>
+            <property name="halign">start</property>
+            <property name="label" translatable="yes">You are already subscribed to that podcast!</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <menu id="selection-menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Select All</attribute>
+        <attribute name="action">win.selectAll</attribute>
+        <attribute name="accel">&lt;Primary&gt;a</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Select None</attribute>
+        <attribute name="action">win.selectNone</attribute>
+      </item>
+    </section>
+  </menu>
+  <object class="GtkMenuButton" id="selection-menu-button">
+    <property name="menu-model">selection-menu</property>
+    <property name="visible">True</property>
+    <property name="can-focus">True</property>
+    <property name="relief">none</property>
+    <property name="can-focus">False</property>
+    <child>
+      <object class="GtkBox" id="selection-menu-button-box">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="orientation">horizontal</property>
+        <property name="spacing">6</property>
+        <child>
+          <object class="GtkLabel" id="selection-menu-button-label">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Click on items to select them</property>
+          </object>
+          <packing>
+            <property name="pack-type">start</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkArrow" id="selection-menu-button-arrow">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="arrow-type">down</property>
+            <property name="shadow-type">none</property>
+          </object>
+          <packing>
+            <property name="pack-type">start</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <style>
+      <class name="selection-menu"/>
+    </style>
+  </object>
+  <object class="GtkHeaderBar" id="header-bar">
+    <property name="visible">True</property>
+    <property name="vexpand">False</property>
+    <property name="show_close_button">True</property>
+    <child>
+      <object class="GtkButton" id="starred-button">
+        <property name="can_focus">False</property>
+        <property name="valign">center</property>
+        <property name="sensitive">True</property>
+        <property name="tooltip_text" translatable="yes">Mark this article as starred</property>
+        <style>
+          <class name="image-button"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="starred-button-image">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="icon-name">non-starred-symbolic</property>
+            <property name="icon-size">1</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="pack_type">end</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="search-button">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="valign">center</property>
+        <property name="sensitive">True</property>
+        <property name="tooltip_text" translatable="yes">Search</property>
+        <style>
+          <class name="image-button"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="search-button-image">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="icon-name">edit-find-symbolic</property>
+            <property name="icon-size">1</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="pack_type">end</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="select-button">
+        <property name="can_focus">False</property>
+        <property name="valign">center</property>
+        <property name="sensitive">True</property>
+        <property name="tooltip_text" translatable="yes">Select</property>
+        <style>
+          <class name="image-button"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="select-button-image">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="icon-name">object-select-symbolic</property>
+            <property name="icon-size">1</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="pack_type">end</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="add-toggle-button">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="valign">center</property>
+        <property name="sensitive">True</property>
+        <property name="use_popover">True</property>
+        <property name="tooltip_text" translatable="yes">Add a new podcast</property>
+        <style>
+              <class name="image-button"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="add-button-image">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="icon-name">list-add-symbolic</property>
+            <property name="icon-size">1</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="pack_type">start</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkButton" id="back-button">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="valign">center</property>
+        <property name="sensitive">True</property>
+        <property name="tooltip_text" translatable="yes">Back</property>
+        <style>
+              <class name="image-button"/>
+        </style>
+        <child>
+          <object class="GtkImage" id="back-button-image">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="icon-name">go-previous-symbolic</property>
+            <property name="icon-size">1</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="pack_type">start</property>
+      </packing>
+    </child>
+  </object>
+</interface>

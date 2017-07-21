@@ -1,0 +1,10 @@
+data/AboutDialog.ui.in
+data/app-menu.ui
+data/ui/headerbar.ui
+data/gnome-podcasts.appdata.xml.in
+data/org.gnome.Podcasts.desktop.in
+data/org.gnome.Podcasts.gschema.xml
+gnomepodcasts/application.py
+gnomepodcasts/notification.py
+gnomepodcasts/toolbar.py
+gnomepodcasts/window.py

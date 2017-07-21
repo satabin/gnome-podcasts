@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/gnome/Podcasts">
+    <file>application.css</file>
+    <file preprocess="xml-stripblanks">AboutDialog.ui</file>
+    <file alias="gtk/menus.ui" preprocess="xml-stripblanks">app-menu.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks">ui/headerbar.ui</file>
+  </gresource>
+</gresources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>org.gnome.Podcasts.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>Podcasts</name>
+  <summary>Play and organize your podcast collection</summary>
+  <description>
+    <p>
+      Podcasts is the new GNOME podcast playing application.
+    </p>
+  </description>
+  <screenshots>
+  </screenshots>
+  <project_group>GNOME</project_group>
+  <url type="homepage">https://github.com/satabin/gnome-podcasts/</url>
+  <url type="bugtracker">https://github.com/satabin/gnome-podcasts/issues/new</url>
+
+  <update_contact>lucas.satabin@gnieh.org</update_contact>
+  <translation type="gettext">gnome-podcasts</translation>
+</component>

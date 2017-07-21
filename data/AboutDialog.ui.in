@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="gnome-podcasts">
+  <!-- interface-requires gtk+ 3.0 -->
+  <object class="GtkAboutDialog" id="about_dialog">
+    <property name="can_focus">False</property>
+    <property name="modal">True</property>
+    <property name="program_name" translatable="yes">Podcasts</property>
+    <property name="version">@PACKAGE_VERSION@</property>
+    <property name="copyright" translatable="yes">Copyright © 2017 Lucas Satabin</property>
+    <property name="comments" translatable="yes">A podcasts player and management application for GNOME.</property>
+    <property name="website">@PACKAGE_URL@</property>
+    <property name="website_label" translatable="yes">Visit Podcasts website</property>
+    <property name="license" translatable="yes">Podcasts is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+
+Podcasts is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with Podcasts; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+The Podcasts authors hereby grant permission for non-GPL compatible GStreamer plugins to be used and distributed together with GStreamer and Podcasts.  This permission is above and beyond the permissions granted by the GPL license by which Podcasts is covered.  If you modify this code, you may extend this exception to your version of the code, but you are not obligated to do so.  If you do not wish to do so, delete this exception statement from your version.
+</property>
+    <property name="authors">Lucas Satabin
+    </property>
+    <property name="translator_credits">Lucas Satabin
+    </property>
+    <property name="logo_icon_name">gnome-podcasts</property>
+    <property name="wrap_license">True</property>
+  </object>
+</interface>

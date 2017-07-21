@@ -1,0 +1,192 @@
+# French translations for gnome-podcasts package
+# Traductions françaises du paquet gnome-podcasts.
+# Copyright (C) 2017 Lucas Satabin
+# This file is distributed under the same license as the gnome-podcasts package.
+# Lucas Satabin <lucas.satabin@gnieh.org>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-podcasts 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/satabin/gnome-podcasts/issues/new\n"
+"POT-Creation-Date: 2017-07-21 19:11+0200\n"
+"PO-Revision-Date: 2017-07-11 20:30+0200\n"
+"Last-Translator: Lucas Satabin <lucas.satabin@gnieh.org>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: data/AboutDialog.ui.in:7 data/gnome-podcasts.appdata.xml.in:6
+#: data/org.gnome.Podcasts.desktop.in:3 gnomepodcasts/application.py:33
+#: gnomepodcasts/application.py:78 gnomepodcasts/window.py:32
+msgid "Podcasts"
+msgstr "Podcasts"
+
+#: data/AboutDialog.ui.in:9
+msgid "Copyright © 2017 Lucas Satabin"
+msgstr "Copyright © 2017 Lucas Satabin"
+
+#: data/AboutDialog.ui.in:10
+msgid "A podcasts player and management application for GNOME."
+msgstr ""
+"Une application de lecture de gestion de podcasts (ou « peaux de caste ») "
+"pour GNOME"
+
+#: data/AboutDialog.ui.in:12
+msgid "Visit Podcasts website"
+msgstr "Visitez les site de Podcasts"
+
+#: data/AboutDialog.ui.in:13
+msgid ""
+"Podcasts is free software; you can redistribute it and/or modify it under "
+"the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 3 of the License, or (at your option) "
+"any later version.\n"
+"\n"
+"Podcasts is distributed in the hope that it will be useful, but WITHOUT ANY "
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+"details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with "
+"Podcasts; if not, write to the Free Software Foundation, Inc., 51 Franklin "
+"Street, Fifth Floor, Boston, MA 02110-1301 USA.\n"
+"\n"
+"The Podcasts authors hereby grant permission for non-GPL compatible "
+"GStreamer plugins to be used and distributed together with GStreamer and "
+"Podcasts.  This permission is above and beyond the permissions granted by "
+"the GPL license by which Podcasts is covered.  If you modify this code, you "
+"may extend this exception to your version of the code, but you are not "
+"obligated to do so.  If you do not wish to do so, delete this exception "
+"statement from your version.\n"
+msgstr ""
+
+#: data/app-menu.ui:6
+msgid "About"
+msgstr "À propos"
+
+#: data/app-menu.ui:10
+msgid "Quit"
+msgstr "Quitter"
+
+#: data/ui/headerbar.ui:9 data/ui/headerbar.ui:222
+msgid "Add a new podcast"
+msgstr "Ajouter un nouveau podcast"
+
+#: data/ui/headerbar.ui:25
+msgid "Enter podcast address to add"
+msgstr "Entrez l’adresse du podcast à ajouter"
+
+#: data/ui/headerbar.ui:54
+msgid "Add"
+msgstr "Ajouter"
+
+#: data/ui/headerbar.ui:84
+msgid "You are already subscribed to that podcast!"
+msgstr "Vous êtes déjà abonné à ce podcast !"
+
+#: data/ui/headerbar.ui:93
+msgid "Select All"
+msgstr "Tout sélectionner"
+
+#: data/ui/headerbar.ui:98
+msgid "Select None"
+msgstr "Tout déselectionner"
+
+#: data/ui/headerbar.ui:119
+msgid "Click on items to select them"
+msgstr "Cliquez sur les éléments pour les sélectionner"
+
+#: data/ui/headerbar.ui:153
+msgid "Mark this article as starred"
+msgstr "Marquer cet article comme lu"
+
+#: data/ui/headerbar.ui:176
+msgid "Search"
+msgstr "Chercher"
+
+#: data/ui/headerbar.ui:198
+msgid "Select"
+msgstr "Sélectionner"
+
+#: data/ui/headerbar.ui:245
+msgid "Back"
+msgstr "Retour"
+
+#: data/gnome-podcasts.appdata.xml.in:7 data/org.gnome.Podcasts.desktop.in:5
+msgid "Play and organize your podcast collection"
+msgstr "Écoutez et organisez votre collection de podcasts"
+
+#: data/gnome-podcasts.appdata.xml.in:9
+msgid "Podcasts is the new GNOME podcast playing application."
+msgstr "Podcsts est la nouvelle application de lecture de podcasts pour GNOME."
+
+#: data/org.gnome.Podcasts.desktop.in:4
+msgid "Podcast Player"
+msgstr "Lecteur de podcasts"
+
+#: data/org.gnome.Podcasts.desktop.in:6
+msgid "gnome-podcasts"
+msgstr "gnome-podcasts"
+
+#: data/org.gnome.Podcasts.desktop.in:11
+msgid "Podcasts;Player;"
+msgstr "Podcasts;Lecteur;"
+
+#: data/org.gnome.Podcasts.gschema.xml:6
+msgid "Window size"
+msgstr "Taille de la fenêtre"
+
+#: data/org.gnome.Podcasts.gschema.xml:7
+msgid "Window size (width and height)."
+msgstr "Taille de la fenêtre (largeur et hauteur)."
+
+#: data/org.gnome.Podcasts.gschema.xml:11
+msgid "Window position"
+msgstr "Position de la fenêtre"
+
+#: data/org.gnome.Podcasts.gschema.xml:12
+msgid "Window position (x and y)."
+msgstr "Position de la fenêtre (x et y)"
+
+#: data/org.gnome.Podcasts.gschema.xml:16
+msgid "Window maximized"
+msgstr "Fenêtre maximisée"
+
+#: data/org.gnome.Podcasts.gschema.xml:17
+msgid "Window maximized state."
+msgstr "État de maximisation de la fenêtre"
+
+#: data/org.gnome.Podcasts.gschema.xml:21
+msgid "Notifications mode"
+msgstr "Mode de notification"
+
+#: data/org.gnome.Podcasts.gschema.xml:22
+msgid "Enables or disables playback notifications"
+msgstr "Active ou désactive les notifications de lecture"
+
+#: data/org.gnome.Podcasts.gschema.xml:26
+msgid "Inital state has been displayed"
+msgstr "L'état initial a été affiché"
+
+#: data/org.gnome.Podcasts.gschema.xml:27
+msgid "Set to true when initial state has been displayed"
+msgstr "Vaut « true » (vrai) si l'état initial a été affiché"
+
+#: gnomepodcasts/notification.py:46
+msgid "Previous"
+msgstr "Précédent"
+
+#: gnomepodcasts/notification.py:49
+msgid "Pause"
+msgstr "Pause"
+
+#: gnomepodcasts/notification.py:52
+msgid "Play"
+msgstr "Lecture"
+
+#: gnomepodcasts/notification.py:54
+msgid "Next"
+msgstr "Suivant"

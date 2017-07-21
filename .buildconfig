@@ -1,0 +1,8 @@
+[default]
+name=Défaut
+device=local
+runtime=host
+config-opts=
+prefix=/home/lucas/.cache/gnome-builder/install/gnome-podcasts/host
+app-id=
+default=true

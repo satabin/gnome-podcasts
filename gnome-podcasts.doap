@@ -1,0 +1,25 @@
+<Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:gnome="http://api.gnome.org/doap-extensions#"
+         xmlns="http://usefulinc.com/ns/doap#">
+
+  <name xml:lang="en">gnome-podcasts</name>
+  <shortdesc xml:lang="en">Podcasts player and management application</shortdesc>
+  <description>Podcasts is the new GNOME podcast playing application.</description>
+
+  <homepage rdf:resource="https://github.com/satabin/gnome-podcasts/" />
+  <download-page rdf:resource="https://github.com/satabin/gnome-podcasts/releases" />
+  <bug-database rdf:resource="https://github.com/satabin/gnome-podcasts/issues/new" />
+
+  <category rdf:resource="http://api.gnome.org/doap-extensions#apps" />
+  <programming-language>Python</programming-language>
+
+  <maintainer>
+    <foaf:Person>
+      <foaf:name>Lucas Satabin</foaf:name>
+      <foaf:mbox rdf:resource="mailto:lucas.satabin@gnieh.org" />
+    </foaf:Person>
+  </maintainer>
+</Project>
+
