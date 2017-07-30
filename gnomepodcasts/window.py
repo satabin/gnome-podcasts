@@ -40,7 +40,6 @@ class Window(Gtk.ApplicationWindow):
         self.prev_view = None
         self.curr_view = None
 
-        self.miner = app.miner
         self.tracker = app.tracker
 
         size_setting = self.settings.get_value('window-size')
@@ -63,7 +62,6 @@ class Window(Gtk.ApplicationWindow):
         self.window_size_update_timeout = None
         self.connect("window-state-event", self._on_window_state_event)
         self.connect("configure-event", self._on_configure_event)
-        self.connect("destroy", self._on_destroy)
 
     @log
     def _setup_view(self):
@@ -186,7 +184,3 @@ class Window(Gtk.ApplicationWindow):
         self._stack.remove(self.feed_view)
         self.toolbar.set_state(ToolbarState.MAIN)
         self.feed_view = None
-
-    def _on_destroy(self, window):
-        if self.miner:
-            self.miner.stop()

@@ -19,7 +19,7 @@ from gi.repository import Gtk, Gio, GLib, Gdk, Notify
 
 from gnomepodcasts import log
 from gnomepodcasts.notification import NotificationManager
-from gnomepodcasts.tracker import PodcastTracker, PodcastMiner
+from gnomepodcasts.tracker import PodcastTracker
 from gnomepodcasts.window import Window
 
 class Application(Gtk.Application):
@@ -36,7 +36,6 @@ class Application(Gtk.Application):
         self._init_style()
         self._window = None
         self.tracker = None
-        self.miner = None
 
     def _init_style(self):
         css_provider_file = Gio.File.new_for_uri(
@@ -83,10 +82,6 @@ class Application(Gtk.Application):
         self._window.destroy()
 
     def do_activate(self):
-        if not self.miner:
-            self.miner = PodcastMiner()
-            self.miner.start()
-
         if not self.tracker:
             self.tracker = PodcastTracker()
 
